@@ -26,16 +26,22 @@ def _detect_device():
 from engine import BackgroundModel, SegmentationEngine, HandTracker, PortalBox, HUD
 
 BANNER = """
-Ghost / Invisibility Mode
-dev: tubakhxn
+=========================================================
+        Ghost / Invisibility Mode
+        Customized by Mitali Bilagi
+=========================================================
 
-  1. Stand still 3s  ->  background captured
-  2. Show BOTH hands spread apart  ->  yellow box appears
-  3. PINCH thumb + index together  ->  YOU VANISH
-  4. Pinch again  ->  reappear
-  R = recalibrate  |  S = screenshot  |  Q = quit
+1. Stand still for 3 seconds (Background Calibration)
+2. Show BOTH hands spread apart
+3. Pinch thumb + index finger to become invisible
+4. Pinch again to reappear
+
+Controls:
+R = Recalibrate
+S = Screenshot
+Q = Quit
 """
-WINDOW = "Ghost / Invisibility Mode  by Tuba"
+WINDOW = "Ghost / Invisibility Mode | Customized by Mitali Bilagi"
 
 def run_calibration(cap, bg_model, w, h, seconds=3):
     print(f"[CAL] Stand still {seconds}s ...")
